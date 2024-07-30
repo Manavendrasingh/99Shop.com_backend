@@ -11,7 +11,7 @@ userRouter.post("/signup",signUP)
           .post("/login",logIn)
           .patch("/",auth,updataUser)
           .get("/",auth,getUser)
-          .post("/signOut",auth,logOut);
+          .post("/logout",auth,logOut);
 
 
           export default userRouter;
