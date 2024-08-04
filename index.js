@@ -11,7 +11,7 @@ const server = express();
 
 const port = process.env.PORT || 3000;
 const option = {
-    origin : ' http://localhost:5174/',
+    origin : ' http://localhost:5174',
     Credential : true,
 }
 
