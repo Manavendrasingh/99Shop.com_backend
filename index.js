@@ -18,7 +18,7 @@ const option = {
 server.use(express.json());
 server.use(express.urlencoded({extended : true}));
 server.use(cookieParser());
-server.use(cors());
+server.use(cors(option));
 
 
 server.use("/user",userRouter);
