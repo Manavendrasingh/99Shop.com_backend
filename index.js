@@ -1,4 +1,4 @@
-import express from "express";
+ import express from "express";
  import 'dotenv/config'
  import dbConnect from "./dbConntect.js";
  import userRouter from "./Routers/users.Router.js";
@@ -12,7 +12,7 @@ const server = express();
 const port = process.env.PORT || 3000;
 const option = {
     origin : ' http://localhost:5174',
-    Credential : true,
+    credentials: true,
 }
 
 server.use(express.json());
