@@ -8,7 +8,7 @@ const auth = async (req,res,next)=>{
      const token =  req.cookies?.token; //req.cookies.get(token) || undefined; 
     if(!token)
         {
-            return res.status(402).send({result : false ,message : "User not verifed"});
+            return res.status(402).send({result : false ,message : "User not verifed || user no login "});
         }
      else{
         const {id} = jwt.verify(token,process.env.PRIVATE_KEY );

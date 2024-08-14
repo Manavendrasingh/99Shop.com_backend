@@ -46,7 +46,7 @@ const logIn = async (req,res)=>{
             return res
                    .status(200)
                    .cookie("token",jwt_token,cookie_option)
-                   .send({result:true , message : "user login successfully"});
+                   .send({result:true , message : "user login successfully",data:find_user});
         }
     else  return res.status(402).send({result : false,message : "password incorrect"})
   }catch(error){res.status(402).send({result : false ,message : error.message})};    
